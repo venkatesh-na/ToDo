@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31efa13219.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Priority Todo</h1>
+    </header>
+    <div>
+        <!--input-->
+       <section class = "outer-input">
+           <div class = "inner-input">
+                <input type = "text" placeholder="Title" class = "title" maxlength=9>
+                <textarea class = "desc"placeholder="Description"></textarea>
+                <div>
+                    <!--from the setting the same name attribute we can able to select only on e radio button-->
+                    <!--from for attribute buy selecting the label we can able select radio button-->
+                    <div>
+                        <input name = "same"id = "high" type = "radio">
+                        <label for = "high">High-Priority</label>
+                    </div>
+                    <div>
+                        <input name = "same" id = "low" type = "radio">
+                        <label for = "low">Low-Priority</label>
+                    </div>
+                </div>
+                <button class = "add">Add To Do</button>
+           </div>
+       </section>
+       <!--input-->
+
+       <!--output-->
+       <section class = "outer-todo">
+           <img class = "img" src = "undraw_To_do_re_jaef.png">
+           <!--
+        <div class = "inner-todo">
+            <div>
+                <h1>Milk</h1>
+                <div>&#x26a1</div>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure suscipit cum placeat, vero voluptas nihil?</p>
+            <div>
+                <button class = "complete">complete</button>
+                <button class = "delete">delete</button>
+            </div>
+        </div>
+            -->
+       </section>
+       <!--output-->
+    </div>
+</body>
+<script src = "app.js"></script>
+</html>
